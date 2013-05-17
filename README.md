@@ -1,6 +1,6 @@
-arbrr_site
+Arbrr Labs Website
 ==========
 
-Website for Arbrr Labs
+Trying a relatively flat UI
 
 Default.php, not index.html just because of my shitty free hosting.
