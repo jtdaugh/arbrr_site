@@ -94,54 +94,39 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-@font-face {
-	font-family: 'brankic1979';
-	src:url('../fonts/brankic1979.eot');
-	src:url('../fonts/brankic1979.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/brankic1979.svg#brankic1979') format('svg'),
-		url('../fonts/brankic1979.woff') format('woff'),
-		url('../fonts/brankic1979.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-/* Use the following CSS code if you want to have a class per icon */
-[class^="icon-"]:before, [class*=" icon-"]:before {
-	font-family: 'brankic1979';
-	font-style: normal;
-	speak: none;
-	font-weight: normal;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-}
 
-.topstrip {
+.top-frame {
 	width:100%;
 	height:680px;
-	background:#000 url(../img/header-bg3.jpg) no-repeat top center;
+	background:#000 url(../img/header-bg.jpg) no-repeat top center;
 	position:fixed;
 	top:0;
 	-webkit-font-smoothing:antialiased;
 }
-.topstrip .mainheader {
+.top-frame .mainheader {
 	width:1000px;
 	margin:0 auto;
 	color:#fff;
 }
-.topstrip .mainheader .logo {
-	margin-top:40px;
+.top-frame .mainheader .logo {
 	float:left;
-	width:120px;
 	text-transform:uppercase; 
-	color:#fff; 
 	font-size:1.25em;
-	margin-bottom:0px;
 	font-weight:700;
 	color:#79d1b0;
 }
-.topstrip nav {
+
+.top-frame .header-stuff {
+	margin-top: 40px;
+}
+
+.header-stuff ul{
+	margin-top: 0;
+}
+
+.top-frame nav {
 	float:right;
-	width:500px;
-	margin-top:40px;
+	width:430px;
 	font-family:'Open Sans', sans-serif;
 }
 nav li {
@@ -149,18 +134,18 @@ nav li {
 	margin:0 0 0 40px;
 
 }
-#follownav nav {
+#nav-bar nav {
 	float:right;
 	margin-top:0px;
 	font-family:'Open Sans', sans-serif;
 	-webkit-font-smoothing:antialiased;
 }
 
-.follownavwrap {
+.nav-bar-wrap {
 	width:1000px;
 	margin:0 auto;
 }
-.follownavwrap .logo {
+.nav-bar-wrap .logo {
 	margin-top:12px;
 }
 
@@ -171,36 +156,24 @@ ul.jsnav {
 nav li:first-child {
 	margin:0;
 }
-nav a {
-	padding:0;
-	display:block;
+
+nav a, .header-stuff a{
 	-moz-transition:all 0.3s ease-in-out; 
 	-webkit-transition:all 0.3s ease-in-out;
 	text-decoration:none; 
 	color:#79d1b0;
 	text-transform:uppercase; 
 	font-size:1.25em;
-	margin-bottom:0px;
-	font-weight:700;
+	font-weight:400;
 }
 
-nav a:hover { 
-	color:#333; 
+nav a:hover , .header-stuff a:hover{ 
+	color:#252525; 
 	-moz-transition:all 0.3s ease-in-out; 
 	-webkit-transition:all 0.3s ease-in-out; 
 }
 
-.topstrip .mainheader h1 {
-	/*display:block;
-	font-family:'arvo', serif;
-	float:left;
-	font-weight:normal;
-	width:1000px;
-	text-align:center;
-	margin-top:68px;
-	margin-bottom:6px;
-	font-size:4.5em;
-	text-shadow:#000 1px 1px;*/
+.top-frame .mainheader h1 {
 	display:block;
 	font-family:'Open Sans', sans-serif;
 	font-weight:300;
@@ -213,27 +186,16 @@ nav a:hover {
 	margin-top: 190px;
 	color:#252525;
 }
-.topstrip .mainheader h2 {
-	display:block;
-	font-family:'Open Sans', sans-serif;
-	font-weight:300;
-	font-size:1.5em;
-	width:800px;
-	text-align:center;
-	float:left;
-	line-height:1.9em;
-	margin-left:90px;
-	color:#eee;
-}
 
-.arbrr-banner {
+
+.logo-banner {
 	position:relative;
 	top:425px;
 	width:100%;
 
 }
 
-.arbrr-banner img {
+.logo-banner img {
 	border: none;
     display: block;
 	margin: 0 auto;
@@ -244,7 +206,7 @@ nav a:hover {
 	top:421px;
 	background:#252525;
 }
-.site .whatwrap .whatstrip {
+.site .second-frame .the-team {
 	width:1000px;
 	margin:0 auto;
 	padding-top:120px;
@@ -255,7 +217,7 @@ nav a:hover {
 	float:left;
 	width:500px;
 }
-.speaker {
+.image-section {
 	float:left;
 	width:500px;
 }
@@ -272,14 +234,14 @@ nav a:hover {
 	line-height:1.8em;
 }
 
-.sectionTop h1 {
+.section-header h1 {
 	display:block;
 	font-family:'arvo', serif;
 	font-weight:normal;
 	color:#79d1b0;
 	font-size:2.25em;
 }
-.sectionTop p {
+.section-header p {
 	font-size:1.5em;
 	color:#8c8c8c;
 	line-height:1.8em;
@@ -292,43 +254,44 @@ a {
 	-moz-transition:all 0.3s ease-in-out; -webkit-transition:all 0.3s ease-in-out;
 }
 a:hover {
-	color:#000;
+	color:#252525;
 	-moz-transition:all 0.3s ease-in-out; -webkit-transition:all 0.3s ease-in-out;
 }
 
-.bgbox {
-	width:418px;
-	height:401px;
-	background:url(../img/speakerbg.jpg) no-repeat center center #F90;
+.image-box {
+	width:420px;
+	height:320px;
+	background:url(../img/team.jpg) no-repeat center center #252525;
 	color:#fff;
 	font-size:1.125em;
 	-webkit-font-smoothing:antialiased;
 	padding:20px;
-	margin:-16px 0px 0px 40px;
+	margin:0 0 0 40px;
 }
 .bold {
 	font-weight:700;
 }
-.whenwrap {
+.third-frame {
 	background:#f3f3f3;
 }
-.contactwrap {
+.fourth-frame {
 	background:#79d1b0;
 	color:#252525;
 }
 
-.contactwrap .sectionTop h1 {
+.fourth-frame .section-header h1 {
 	color:#f3f3f3;
 }
 
-.whenstrip {
+.frame-content {
 	width:1000px;
 	margin:0 auto;
 	overflow:auto;
 	padding-top:100px;
 	padding-bottom: 100px;
 }
-.meetupbox {
+
+.content-box {
 	width:398px;
 	float:left;
 	background:#e4e4e4;
@@ -373,7 +336,7 @@ a:hover {
 	color:#656565;
 	font-size:0.9em;
 }
-#follownav {
+#nav-bar {
 	height:70px;
 	width:100%;
 	background:#000;

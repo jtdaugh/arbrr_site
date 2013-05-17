@@ -17,8 +17,11 @@ $(function() {
 
 $(window).scroll(function(){
   if($(window).scrollTop() > 620){
-      $("#follownav").slideDown("fast");
-	    $('#follownav').removeClass('hide').addClass('show');	  
+      $("#nav-bar").slideDown("fast");
+	    $('#nav-bar').removeClass('hide').addClass('show');	  
+  }
+  if($(window).scrollTop() > 360){
+      $(".header-stuff").fadeOut();
   }
   if($(window).scrollTop() > 40) {
       $("#dreams").fadeOut();
@@ -26,7 +29,10 @@ $(window).scroll(function(){
 });
 $(window).scroll(function(){
   if($(window).scrollTop() < 620){
-      $("#follownav").slideUp("fast");
+      $("#nav-bar").slideUp("fast");
+  }
+  if($(window).scrollTop() < 360){
+      $(".header-stuff").fadeIn();
   }
   if($(window).scrollTop() < 40) {
       $("#dreams").fadeIn();
