@@ -21,8 +21,8 @@ textarea {
 body {
     font-size: 1em;
     line-height: 1.4;
-	font-family:'Open Sans', sans-serif;
-	font-weight:300;
+	font-family:'Maven Pro', sans-serif;
+	font-weight:400;
 }
 
 /*
@@ -127,7 +127,7 @@ textarea {
 .top-frame nav {
 	float:right;
 	width:430px;
-	font-family:'Open Sans', sans-serif;
+	font-family:'Maven Pro', sans-serif;
 }
 nav li {
 	float:left;
@@ -137,7 +137,7 @@ nav li {
 #nav-bar nav {
 	float:right;
 	margin-top:0px;
-	font-family:'Open Sans', sans-serif;
+	font-family:'Maven Pro', sans-serif;
 	-webkit-font-smoothing:antialiased;
 }
 
@@ -162,9 +162,9 @@ nav a, .header-stuff a{
 	-webkit-transition:all 0.3s ease-in-out;
 	text-decoration:none; 
 	color:#79d1b0;
-	text-transform:uppercase; 
+	/*text-transform:uppercase; */
 	font-size:1.25em;
-	font-weight:400;
+	font-weight:500;
 }
 
 nav a:hover , .header-stuff a:hover{ 
@@ -175,7 +175,7 @@ nav a:hover , .header-stuff a:hover{
 
 .top-frame .mainheader h1 {
 	display:block;
-	font-family:'Open Sans', sans-serif;
+	font-family:'Maven Pro', sans-serif;
 	font-weight:300;
 	font-size:2em;
 	width:800px;
@@ -192,7 +192,12 @@ nav a:hover , .header-stuff a:hover{
 	position:relative;
 	top:425px;
 	width:100%;
-
+	font-family:'Maven Pro', sans-serif;
+	font-weight:500;
+	font-size: 250px;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 190px;
 }
 
 .logo-banner img {
@@ -223,7 +228,7 @@ nav a:hover , .header-stuff a:hover{
 }
 .textcontent h1 {
 	display:block;
-	font-family:'arvo', serif;
+	font-family:'Maven Pro', sans-serif;
 	font-weight:normal;
 	color:#79d1b0;
 	font-size:2.25em;
@@ -236,7 +241,7 @@ nav a:hover , .header-stuff a:hover{
 
 .section-header h1 {
 	display:block;
-	font-family:'arvo', serif;
+	font-family:'Maven Pro', sans-serif;
 	font-weight:normal;
 	color:#79d1b0;
 	font-size:2.25em;
@@ -261,13 +266,21 @@ a:hover {
 .image-box {
 	width:420px;
 	height:320px;
-	background:url(../img/team.jpg) no-repeat center center #252525;
 	color:#fff;
 	font-size:1.125em;
 	-webkit-font-smoothing:antialiased;
 	padding:20px;
 	margin:0 0 0 40px;
 }
+
+.image-box#our-faces {
+	background:url(../img/team.jpg) no-repeat center center #252525;
+}
+
+.image-box#companies {
+	background:url(../img/companies.png) no-repeat center center #252525;
+}
+
 .bold {
 	font-weight:700;
 }
